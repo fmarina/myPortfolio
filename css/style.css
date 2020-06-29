@@ -216,3 +216,168 @@ footer {
     color: #7c7c7c
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    .hamburger { display: block; }
+    
+    .nav-bar {
+        background-color: transparent;
+        box-shadow: none;
+        justify-content: flex-end;
+    }   
+
+    .nav-list {
+        width: 50%;
+        height: 50vh;   
+        min-height: 200px;     
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        background: #525e65;
+        top: 0;
+        right: 0;             
+        clip-path: circle(0.0% at 100% 0);
+    }  
+    
+    .nav-bar .open {        
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+
+    .nav-link { border-bottom: 1px solid whitesmoke; }
+
+    #main { padding: 20px 50px; }
+    
+    .main-sections { margin-bottom: 0px; }    
+    
+    #home-section {  
+        height: 90vh;
+        margin-top: 50px;
+        justify-content: flex-start;
+    }
+    
+    #home-section .title {    
+        font-size: 2.8rem;
+        padding: 20px;
+    }
+    
+    #home-section .subtitle { font-size: 1.5rem; }
+
+    .mydescription { font-size: 1.2rem; }
+
+    #projects-section h2, #contact-section h2{ font-size: 2.8rem; }
+}
+
+@media screen and (max-width: 425px) {
+    .hamburger { display: block; }
+    
+    .nav-bar {
+        background-color: transparent;
+        box-shadow: none;
+        justify-content: flex-end;
+    }   
+
+    .nav-list {
+        width: 50%;
+        height: 60vh;   
+        min-height: 200px;     
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        background: #525e65;
+        top: 0;
+        right: 0;             
+        clip-path: circle(0.0% at 100% 0);
+    }  
+
+    .nav-link { border-bottom: 1px solid whitesmoke; }
+
+    #main { padding: 20px 50px; }
+    
+    .main-sections { margin-bottom: 0px; }    
+    
+    #home-section {  
+        height: 90vh;
+        margin-top: 50px;
+        justify-content: flex-start;
+    }
+    
+    #home-section .title {    
+        font-size: 2.8rem;
+        padding: 20px;
+    }
+    
+    #home-section .subtitle { font-size: 1.5rem; }
+
+    .mydescription { font-size: 1.2rem; }
+
+    #projects-section h2, #contact-section h2 { font-size: 2.8rem; }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-link {font-size: 1.2rem;}
+
+    #home-section { 
+        height: auto;
+        margin-top: 0px;
+    }
+    
+    #home-section .title {    
+        font-size: 2.2rem;
+        padding: 20px 0px 5px;
+    }
+    
+    #home-section .subtitle {
+        font-size: 1.2rem;    
+        padding: 5px 0px;
+    }
+
+    .mydescription {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        padding: 30px 5px;
+    }
+
+    .container-photo {
+        width: 100px;
+        height: 100px;   
+        border: 2px solid white;
+        margin: 10px 0px;
+    }
+
+    #projects-section h2, #contact-section h2 { font-size: 2rem; }
+
+    .project-card {
+        margin: 5px;
+        width: 160px;
+        height: 80px;
+    }    
+
+    #contact-section { margin-top: 15px}
+
+    #contact-section h2 { padding: 10px 0px;}
+    
+    .contact-link { padding: 5px; }
+    
+    .contact-link i { font-size: 1.8rem; }
+    
+    .arrow-up i { font-size: 2rem; }
+}
+
+@media screen and (max-width: 320px) {
+    
+    #home-section .title { font-size: 2rem; }
+    
+    #home-section .subtitle { font-size: 1.1rem; }
+
+    .mydescription { font-size: 1.1rem; }
+
+    #projects-section h2, #contact-section h2 { font-size: 1.7rem; }
+    
+    .contact-link i { font-size: 1.4rem; }
+
+    #contact-section a { font-size: 1rem; }
+}
